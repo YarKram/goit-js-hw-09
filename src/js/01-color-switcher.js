@@ -1,6 +1,18 @@
 const startBtn = document.querySelector('[data-start]');
 const stopBtn = document.querySelector('[data-stop]');
+const button = document.querySelectorAll('button');
 const body = document.body;
+console.log(button);
+
+startBtn.style.marginLeft = '50%';
+startBtn.style.marginTop = '50%';
+
+button.forEach(el => {
+  el.style.textTransform = 'uppercase';
+  el.style.backgroundColor = 'white';
+  el.style.padding = '20px';
+  el.style.fontSize = '20px';
+});
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
