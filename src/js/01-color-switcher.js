@@ -43,3 +43,5 @@ function onStopClick() {
 
 startBtn.addEventListener('click', changeColorWithInterval);
 stopBtn.addEventListener('click', onStopClick);
+
+console.log(intervalChangeColor);
